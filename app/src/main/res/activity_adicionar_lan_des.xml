@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="br.com.geconp.geconp.AdicionarLanDesActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtLanValDes"
+        android:text="@string/valor"
+        android:textColor="@android:color/black"
+        />
+    <EditText
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextLanValDes"
+        android:numeric="decimal"
+        android:inputType="phone"
+        android:text=".00"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtLanDatDes"
+        android:text="@string/data"
+        android:textColor="@android:color/black"
+        />
+    <EditText
+        android:layout_width="@dimen/width_edit_text"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextLanDatDes"
+        android:inputType="date"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/descricao"
+        android:textColor="@android:color/black"
+        android:id="@+id/txtLanDescDes"/>
+    <EditText
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextLanDescDes"
+        android:inputType="text"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tipo"
+        android:id="@+id/txtLanDesTipo"
+        android:textColor="@android:color/black"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerTipoExt" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/conta"
+        android:id="@+id/txtLanDesCon"
+        android:textColor="@android:color/black"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerContaExt" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonAddLanDespesa"
+            android:background="#ff3e2aff"
+            android:textColor="#ffffffff"
+            android:layout_marginTop="20dp"
+            android:width="@dimen/largura"
+            android:text="@string/adicionar"/>
+    </LinearLayout>
+</LinearLayout>

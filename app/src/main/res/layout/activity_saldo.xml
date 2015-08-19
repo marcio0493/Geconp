@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="br.com.geconp.geconp.LancarReceitaActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/receitas"
+        android:id="@+id/textViewListPouBanco"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/despesas"
+        android:id="@+id/textViewListPouValor"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/textViewListPouBanco"
+        android:layout_marginLeft="24dp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/saldo"
+        android:id="@+id/textViewListPouData"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/textViewListPouValor"
+        android:layout_marginLeft="50dp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/textViewSaldoReceita"
+        android:layout_below="@+id/textViewListPouBanco"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="31dp"
+        android:textColor="#ff2b2cff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/textViewSaldoDespesa"
+        android:layout_alignTop="@+id/textViewSaldoReceita"
+        android:layout_alignStart="@+id/textViewListPouValor"
+        android:textColor="#ffff2333" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/textViewSaldo"
+        android:layout_alignTop="@+id/textViewSaldoDespesa"
+        android:layout_alignStart="@+id/textViewListPouData" />
+</RelativeLayout>

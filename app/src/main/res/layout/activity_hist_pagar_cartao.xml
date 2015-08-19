@@ -1,0 +1,90 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="br.com.geconp.geconp.HistPagarCartaoActivity">
+
+    <TableRow android:layout_weight="0">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data"
+            android:id="@+id/txtIdDat"
+            android:layout_column="0"
+            android:textColor="#ff000000"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DescriÃ§Ã£o"
+            android:id="@+id/txtIdDesc"
+            android:layout_marginLeft="20dp"
+            android:layout_column="0"
+            android:textColor="#ff000000"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valor"
+            android:id="@+id/txtValorpag"
+            android:layout_column="0"
+            android:layout_marginLeft="20dp"
+            android:textColor="#ff000000"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bandeira"
+            android:id="@+id/txtBaandeiraPaga"
+            android:layout_column="0"
+            android:layout_marginLeft="20dp"
+            android:textColor="#ff000000"
+            />
+    </TableRow>
+
+    <TableRow android:layout_weight="0">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data"
+            android:id="@+id/txtViewHistPagDat"
+            android:layout_column="0"
+            android:textColor="#ffff121e"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DescriÃ§ao"
+            android:id="@+id/txtViewHistPagDesc"
+            android:layout_marginLeft="20dp"
+            android:layout_column="0"
+            android:textColor="#ffff121e"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valor"
+            android:id="@+id/txtViewHistPagVal"
+            android:layout_column="0"
+            android:layout_marginLeft="20dp"
+            android:textColor="#ffff121e"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bandeira"
+            android:id="@+id/txtViewHistPagBan"
+            android:layout_column="0"
+            android:layout_marginLeft="20dp"
+            android:textColor="#ffff121e"
+            />
+    </TableRow>
+
+</TableLayout>
